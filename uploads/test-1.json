@@ -1,0 +1,23 @@
+[
+    {
+        "question": "Как заканчивается присказка: «Мы и сами с…»",
+        "answers": [
+            {
+                "answer": "с волосами",
+                "result": false
+            },
+            {
+                "answer": "с усами",
+                "result": true
+            },
+            {
+                "answer": "с часами",
+                "result": false
+            },
+            {
+                "answer": "с долгами",
+                "result": false
+            }
+        ]
+    }
+]
