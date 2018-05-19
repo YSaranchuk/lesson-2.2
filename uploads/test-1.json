@@ -1,22 +1,26 @@
 [
     {
-        "question": "Как заканчивается присказка: «Мы и сами с…»",
+        "question": "Перечислите  персонажей, помогавших Герде в сказке Снежная королева",
         "answers": [
             {
-                "answer": "с волосами",
+                "answer": "разбойники",
                 "result": false
             },
             {
-                "answer": "с усами",
+                "answer": "принцесса и принц",
                 "result": true
             },
             {
-                "answer": "с часами",
+                "answer": "вьюга",
                 "result": false
             },
             {
-                "answer": "с долгами",
-                "result": false
+                "answer": "маленькая разбойница",
+                "result": true
+            },
+            {
+                "answer": "ворон и ворона",
+                "result": true
             }
         ]
     }
