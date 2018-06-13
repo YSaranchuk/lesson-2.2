@@ -54,7 +54,7 @@ if (count($_POST) > 0) {
     <fieldset>
         <legend><?=$question?></legend>
         <?php foreach ($answers[0] as $key => $item) : ?>
-            <label><input type="radio" name="<?=$key;?>" value="<?=$item['answer'];?>"> <?=$item['answer'];?></label>
+            <label><input type="checkbox" name="<?=$key1."-".$key2;?>" value="<?=$key1."-".$key2;?>"> <?=$item['answer'];?></label>
         <?php endforeach; ?>
     </fieldset>
     <input type="submit" value="Отправить">
