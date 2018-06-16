@@ -1,19 +1,47 @@
-[
-    {
-        "question": "Что помогает туристу ориентироваться в незнакомом городе?",
+{
+    "title": "Название теста <strong>№2</strong>",
+    "questions": [
+        {
+            "question": "Перечислите  персонажей, помогавших Герде в сказке Снежная королева",
         "answers": [
             {
-                "answer": "путепровод",
+                "answer": "разбойники",
                 "result": false
             },
             {
-                "answer": "путеводная звезда",
-                "result": false
-            },
-            {
-                "answer": "путеводитель",
+                "answer": "принцесса и принц",
                 "result": true
-            }
-        ]
-    }
-]
+            },
+            {
+                "answer": "вьюга",
+                "result": false
+            },
+            {
+                "answer": "маленькая разбойница",
+                "result": true
+            },
+            {
+                "answer": "ворон и ворона",
+                "result": true
+                }
+            ]
+        },
+        {
+            "question": "А кто еще Герде помогал?",
+            "answers": [
+                {
+                    "answer": "кактусы",
+                    "result": false
+                },
+                {
+                    "answer": "розы",
+                    "result": true
+                },
+                {
+                    "answer": "золотой ус",
+                    "result": false
+                }
+            ]
+        }
+    ]
+}
