@@ -1,33 +1,40 @@
 <?php
 $file_list = glob('uploads/*.json');
 ?>
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ru">
+
 <head>
+    <title>2.2 «Обработка форм» - Список тестов</title>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Список тестов</title>
+    <style>
+        .container { max-width: 950px; margin: 0 auto; }
+        h1 {margin-bottom: 0.2em;}
+        li {margin: 3px 0;}
+    </style>
 </head>
+
 <body>
+<div>
+    <div class="container">
+        <h2>Меню:</h2>
+        <ul>
+            <li><a href="admin.php">Форма загрузки тестов</a></li>
+            <li><a href="list.php">Список тестов</a></li>
+        </ul>
 
-    <?php
-        foreach ($file_list as $key => $file) {
+        <h2>Список тестов:</h2>
+        <?php
+        foreach ($file_list as $key => $file) { // key - номер  файла
             $file_test = file_get_contents($file);
-            $decode_file = json_decode($file_test, true);
-            //var_dump($decode_file);
-            foreach ($decode_file as $test) {
-                $question = $test['question'];
-                echo "<a href=\"test.php?test=$key\">$question</a><br>";
-            }
+            $test = json_decode($file_test, true);
+            $title = $test['title'];
+            echo "<li><a href=\"test.php?test=$key\">$title</a></li>";
         }
-    ?>
+        ?>
 
-    <ul>
-        <li><a href="admin.php">Загрузить тест</a></li>
-        <li><a href="list.php">Список тестов</a></li>
-    </ul>
-
+    </div>
+</div>
 </body>
 </html>
