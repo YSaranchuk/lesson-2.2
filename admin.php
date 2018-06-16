@@ -7,7 +7,7 @@
     <style>
         .container { max-width: 950px; margin: 0 auto; }
         h1 {margin-bottom: 0.2em;}
-        li {margin: 3px 0;}
+        li {margin: 3px 0; color: rgb(49, 151, 116);}
     </style>
 </head>
 
